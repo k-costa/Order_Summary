@@ -21,3 +21,125 @@ body{
     width: 100%;
     height: 100vh;
 }
+
+main {
+    background-color: #fff;
+    max-width: 416px;
+    border-radius: 1rem;
+}
+
+main img {
+    width: 100%; 
+    border-radius: 1rem 1rem 0 0;   
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+main section h1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: hsl(224, 47%, 23%);
+}
+
+main section span{
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+main .payment-information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: hsl(225, 100%, 98%);
+    border-radius: 0.8rem;
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+    margin: 2rem 0 ;
+}
+
+main .payment-information .music-price{
+    display: flex;
+    align-items: center;
+}
+
+main .payment-information img{
+    width: 48px;
+    margin-right: 1rem;
+}
+
+main .payment-information .price{
+    display: flex;
+    flex-direction: column;
+}
+
+main .payment-information a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 600;
+    font-size: 90%;
+    transition: all 0.3s;
+}
+
+main .payment-information a:hover{
+    color: hsl(223, 47%, 23%);
+    text-decoration: none;
+}
+
+main button{
+    cursor: pointer;
+    background: hsl(245, 75%, 52%);
+    color: #fff;
+    border-radius: 0.8rem;
+    font-weight: 600;
+    border: none;
+    width: 100%;
+    padding: 1rem 0;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.2);
+    transition: background 0.3s;
+}
+
+main button:hover{
+    background: #766cf1;
+}
+
+#cancel-btn{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    transition: background 0.3s;
+}
+
+#cancel-btn:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+main img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+@media screen and (max-width: 650px) {
+    body {
+      background: url('/images/pattern-background-mobile.svg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+  
+  @media screen and (max-width: 980px) {
+    section {
+      padding: 0 3rem;
+    }
+  }
